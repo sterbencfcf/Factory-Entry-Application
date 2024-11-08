@@ -70,10 +70,8 @@ App({
   },
   func: {
     loginFunc: util.loginFunc,
-    getRequest: util.getRequest,
     postRequest_Data: util.postRequest_Data,
     deletePersonInfo: util.deletePersonInfo,
-    getRequest_session: util.getRequest_session,
     getRequest_data_session: util.getRequest_data_session,
     getRequest_data: util.getRequest_data,
     getUserInfo: util.getUserInfo,

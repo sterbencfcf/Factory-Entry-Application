@@ -1,4 +1,4 @@
-<view wx:if="{{envVersion!=='release'}}">功能正在开发中</view>
+<view wx:if="{{envVersion=='release'}}">功能正在开发中</view>
 <view wx:else class="content">
   <image class="logintop_pic" src="../../picture/login/top.png"></image>
   <image class="loginbg_pic" src="../../picture/login/bg.png"></image>

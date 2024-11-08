@@ -384,8 +384,9 @@ Page({
   },
   getUUid() {
     let url = app.globalData.apiUrl.getRandomID;
-    app.func.getRequest(
+    app.func.getRequest_data(
       url,
+      {},
       (res) => {
         wx.removeStorageSync("UUID");
         wx.setStorageSync("UUID", res.data.UUID);

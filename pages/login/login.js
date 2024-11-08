@@ -31,35 +31,35 @@ Page({
         password: this.data.password
       },
       (res) => {
-        console.log(res.data)
-        console.log("111111")
+        console.log(res)
+        // console.log("111111")
         wx.setStorageSync('userId', this.data.userId)
-        if (res.data.errorCode == 100000) {
+        if (res.data.errorCode == '100000') {
           app.globalData.userId = this.data.userId;
           wx.switchTab({
             url: "/pages/handle/handle",
           });
-        } else if (res.data.errorCode == 200001) {
+        } else if (res.data.errorCode == '200001') {
           wx.showToast({
             title: "用户不存在",
             icon: "error",
           });
-        } else if (res.data.errorCode == 200002) {
+        } else if (res.data.errorCode == '200002') {
           wx.showToast({
             title: "帐号或密码错误",
             icon: "error",
           });
-        } else if (res.data.errorCode == 200003) {
+        } else if (res.data.errorCode == '200003') {
           wx.showToast({
             title: "数据库连接失败",
             icon: "error",
           });
-        } else if (res.data.errorCode == 200004) {
+        } else if (res.data.errorCode == '200004') {
           wx.showToast({
             title: "因其他原因失败",
             icon: "error",
           });
-        } else if (res.data.errorCode == 200005) {
+        } else if (res.data.errorCode == '200005') {
           wx.showToast({
             title: "请先完成注册",
             icon: "error",

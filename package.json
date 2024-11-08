@@ -12,7 +12,8 @@
   "dependencies": {
     "@vant/weapp": "^1.11.0",
     "crypto-js": "^3.3.0",
-    "factory-entry-application": "file:"
+    "factory-entry-application": "file:",
+    "js-base64": "^3.7.7"
   },
   "devDependencies": {
     "@types/crypto-js": "^4.2.2"

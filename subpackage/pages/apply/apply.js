@@ -66,7 +66,7 @@ Page({
     //日历可选范围为一年，dateY + 1
     let maxDate = new Date(dateY, dateM, dateD + 30).getTime();
     let url = app.globalData.apiUrl.queryLmappExternalPersonsWithoutPage;
-    app.func.getRequest_session(url, (res) => {
+    app.func.getRequest_data_session(url, {},(res) => {
       this.setData({
         maxDate,
         wPersonsList: res.data.lmappExternalPersons,

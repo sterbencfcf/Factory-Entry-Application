@@ -20,7 +20,7 @@ Page({
   onLoad() {
     let that = this
     let url = app.globalData.apiUrl.getUserInfo;
-    app.func.getRequest_session(url, (res) => {
+    app.func.getRequest_data_session(url, {},(res) => {
       wx.setStorageSync("userInfo", res.data.userInfo);
       // console.log(res.data)
     });
